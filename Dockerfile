@@ -4,7 +4,7 @@ ARG GODOT_VERSION="4.2.1"
 
 # Install Godot & templates
 RUN apt update -y \
-    && apt install -y wget unzip \
+    && apt install -y wget unzip libfontconfig1 \
     && wget https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip \
     && wget https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_export_templates.tpz \
     && mkdir -p ~/.cache ~/.config/godot ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable \
