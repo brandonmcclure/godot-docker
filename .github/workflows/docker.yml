@@ -5,12 +5,14 @@ on:
   push:
     branches:
       - main
+      - bmcclure/main
     paths: 
       - 'Dockerfile'
       - '.github/workflows/docker.yml'
   pull_request:
     branches:
       - main
+      - bmcclure/main
     paths: 
       - 'Dockerfile'
       - '.github/workflows/docker.yml'
